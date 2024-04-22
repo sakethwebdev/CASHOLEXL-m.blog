@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-rTDO+q6QdT0gu2UQln+1ODKBOyzUUuy87v5E56MKZfiRZQzRmMiyK6AyKj6gxTwJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-rTDO+q6QdT0gu2UQln+1ODKBOyzUUuy87v5E56MKZfiRZQzRmMiyK6AyKj6gxTwJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-rTDO+q6QdT0gu2UQln+1ODKBOyzUUuy87v5E56MKZfiRZQzRmMiyK6AyKj6gxTwJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="index.css">
+  <style>
+    /* Some basic styles for demonstration */
+    .search-bar {
+      text-align: center;
+      margin-top: 20px;
+       /* Adjust the margin as needed */
+}
+
+   
+    .search-container {
+      position: relative;
+      display: inline-block;
+    }
+    #searchInput {
+      padding: 10px;
+      width: 590px;
+      
+    }
+    #searchIcon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    /**********************************************/
+    .home{
+    position: relative;
+}
+
+.home .slides-container .slide{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 5rem 0;
+    display: none;
+}
+
+.home .slides-container .slide.active{
+    display: flex;
+}
+
+.home .slides-container .slide .content{
+    flex: 1 1 40rem;
+    animation: fadeLeft .4s linear .4s backwards;
+}
+
+.home .slides-container .slide .content span{
+    font-size: 2rem;
+    color: #666;
+}
+
+.home .slides-container .slide .content h3{
+    font-size: 6rem;
+    color: #45c287;
+    padding-top: .5rem;
+}
+
+.home .slides-container .slide .content p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: .5rem 0;
+    line-height: 2;
+}
+
+.home .slides-container .slide .content .btn span{
+    color: #fff;
+}
+
+.home .slides-container .slide .image{
+    flex: 1 1 30rem;
+    padding: 3rem 0;
+}
+
+.home .slides-container .slide .image img{
+    width: 100%;
+    animation: fadeOut .4s linear;
+}
+
+.home #slide-next,
+.home #slide-prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    border: .1rem solid #10221b;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+}
+
+.home #slide-next:hover,
+.home #slide-prev:hover{
+    background: #10221b;
+    color: #fff;
+}
+
+.home #slide-next{
+    right: 2rem;
+}
+
+.home #slide-prev{
+    left: 2rem;
+}
+
+/* end */
+   
+  
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="left-option">
+        <img src="https://i.ibb.co/qNkqJs7/siva-visting-card-front-side-copy-1-1.jpg" alt="" class="logo-icon">
+    </div>
+    <div class="right-option">
+        <h1 style="color:white">B2B MARKETPLACE</h1>
+    </div>
+</header>
+
+  <br>
+  <br>
+<br><br>
+<br>
+<br><br>
+
+  
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1; padding-right: 20px;">
+    <div class="content">
+      <h3 style="color: rgb(9, 221, 9); font-size: 50px;">Casholex Collections</h3>
+  
+      <p>Are you looking for a good laptop & Mobiles but don't want to spend a lot of money?<br><br>You're in luck!<br><br>You're at the right place where you can buy your favorite laptop  & Mobiles with in your budget.</p>
+    </div>
+  </div>
+  <div style="flex: 1;">
+    <div class="image">
+      <img src="data:image/jpeg;base64,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" alt="" style="margin-left: 300px;"> </div></div>
+</div>
+
+<br><br>
+<br>
+
+  <!-- Slider section ends -->
+ <!-- Search bar section starts -->
+ <section class="search-bar">
+  <div class="search-container">
+     <input type="text" id="searchInput" placeholder="Search for devices...">
+     <label class="fas fa-search" id="searchIcon"></label>
+  </div>
+</section>
+<!-- Search bar section ends -->
+
+<!-- Replace the Mobile icon section with the Upper Card section -->
+<section class="upper-card-section">
+  <div class="upper-card-container">
+    <div class="upper-card upper-mobile-card">
+      <a href="Sell Old Mobile.html" style="text-decoration: none;">
+      <img src="https://i.ibb.co/28r5ckQ/mobile-icon.jpg" alt="Upper Card 1 Image">
+      <h3>Mobile</h3>
+      <p>SELL MOBILE</p>
+    </div>
+    <div class="upper-card upper-laptop-card">
+      <a href="Sell Old Laptops.html" style="text-decoration: none;">
+        <img src="https://i.ibb.co/BtxtGft/laptop-icon.jpg" alt="Upper Card 3 Image">
+        <h3>Laptop</h3>
+        <p>SELL LAPTOP</p>
+      </a>
+    </div>
+    
+  </div>
+  
+</section>
+
+
+
+
+<!-- Add this section below the upper card box -->
+<section class="lower-card-section">
+  <div class="lower-card-container">
+    <div class="lower-card">
+      <br>
+      <br>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi_MtCGJMd3uJvHp5O1-AhDJtedc52b0oMbw&s" alt="Lower Card 1 Image" style="width: 90px; height: 90px;;">
+
+
+
+      <h3>Check price</h3>
+      <p>Provide device details and get the best price through our advanced pricing engine.</p>
+    </div>
+    <div class="lower-card">
+      <img src="https://i.ibb.co/cg74K10/Schedule-pickup-green.jpg" alt="Lower Card 2 Image">
+      <h3>Schedule Pickup</h3>
+      <p>Free pickup from your home or office address as per your chosen date and time slot.</p>
+    </div>
+    <div class="lower-card">
+      <img src="https://i.ibb.co/YW52N9D/Get-Paid.jpg"alt="Lower Card 3 Image">
+      <h3>Get Paid</h3>
+      <p>Instant and 100% onspot secure payment at the time of device pickup.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Long card section starts -->
+<section class="long-card-section">
+  <div class="center-heading">
+    <h2>Loved by Customers, Represented by Numbers</h2>
+  </div>
+  <div class="long-card-container">
+    <!-- First line -->
+    <div class="long-card">
+      <img src="https://i.ibb.co/j5zKBRJ/Established-Date.jpg" alt="Image 1">
+      <div class="long-card-content">
+        <p>
+          Established Date</p>
+        <h2>July 2017</h2>
+      </div>
+    </div>
+
+    <div class="long-card">
+      <img src="https://i.ibb.co/M66GNVw/prize.jpg" alt="Image 2">
+      <div class="long-card-content">
+        <p>Alexa Ranking</p>
+        <h2>#2 in C2B Buyback India</h2>
+      </div>
+    </div>
+
+    <div class="long-card">
+      <img src="https://i.ibb.co/5MwhQpP/download1.jpg" alt="Google-Reviews-Ranking" style="color:green">
+
+      <div class="long-card-content">
+        <p>
+          Google Reviews Ranking</p>
+        <h2>4.2</h2>
+      </div>
+    </div>
+
+    <!-- Second line -->
+    <div class="long-card">
+      <img src="https://i.ibb.co/0Z7d6pC/Totalcustomers.png" alt="Image 4" />
+
+      <div class="long-card-content">
+        <p>
+          Total Customers</p>
+        <h2>235 Thousand</h2>
+      </div>
+    </div>
+
+    <div class="long-card">
+      <img src="https://i.ibb.co/Jvx4zwM/thumb.png" alt="thumb" " alt="Image 5">
+      <div class="long-card-content">
+        <p>Total Devices</p>
+        <h2>235 Thousand</h2>
+      </div>
+    </div>
+
+    <div class="long-card">
+      <img src="https://i.ibb.co/D7JZFfL/Checkprize.jpg"  alt="Image 6">
+
+      <div class="long-card-content">
+        <p>
+          Total Orders Value</p>
+        <h2>146 crores</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Long card section ends -->
+
+<!-- Add this section below your long card section in your HTML -->
+<!-- Add this section below your long card section in your HTML -->
+<!--section class="sell-section">
+  <div class="dropdown" id="sellDropdown">
+    <h1 id="dropdown-heading">Sell Old Mobiles Phone & Laptop on Recycledevice - How it works? ▼</h1>
+    <div class="sheet">
+      <div class="column">Column 1 Content</div>
+      <div class="column">Column 2 Content</div>
+      <div class="column">Column 3 Content</div>
+      <div class="column">Column 4 Content</div>
+      <div class="column">Column 5 Content</div>
+      <div class="column">Column 6 Content</div>
+      <div class="column">Column 7 Content</div>
+      <div class="column">Column 8 Content</div>
+      <div class="column">Column 9 Content</div>
+      <div class="column">Column 10 Content</div>
+    </div>
+  </div>
+</section-->
+
+
+
+  <script src="index.js"></script>
+
+  <!-- Footer section starts -->
+  <footer>
+    <div class="footer-section">
+      <h2>SELL DEVICES</h2>
+      <ul>
+        <li onclick="window.location.href='Sell OldMobile.html';">Sell Old MOBILE</li>
+
+        <li onclick="window.location.href='Sell Old Laptops.html';">Sell Old LAPTOP</li>
+
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2>COMPANY</h2>
+      <ul>
+        <li>About Us</li>
+        <li>B2B Marketplace</li>
+        <li>Become a Partner</li>
+        <li>Become a Rider</li>
+        <li>Our Warehouses</li>
+        <li>Partner Brands</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2>MORE INFO</h2>
+      <ul>
+        <li>Terms & Conditions</li>
+        <li>Terms of Use</li>
+        <li>Cancellation & Return Policy</li>
+        <li>Privacy Policy</li>
+        <li>Cookie Policy</li>
+        <li>E - Waste Policy</li>
+        <li>Legal</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2>NEED HELP?</h2>
+      <ul>
+        <li>Contact Us</li>
+        <li>Careers</li>
+        <li>FAQs</li>
+        <li>Track Order</li>
+        <li>Why-recycle</li>
+        <li>Laptop QC</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2>FOLLOW US</h2>
+      <p>facebook</p>
+      <p>instagram icon</p>
+      <p>twitter</p>
+      <p>e-mail icon</p>
+    </div>
+
+    <!--div class="footer-section">
+      <h2>RELCUBE INDIA PVT. LTD.</h2>
+      <p>CIN : U52609UP2017PTC094858</p>
+      <p>BASEMENT & 1ST FLOOR, A-53, SECTOR-8, NOIDA - 201301, UTTAR PRADESH, INDIA</p>
+    </div-->
+    
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+   
+    <div class="socialmedia-card">
+      <h2></h2>
+      <div class="icon-container">
+        <div>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    
+   
+    
+    
+    
+    
+    
+  </footer>
+  
+  <!-- Footer section ends -->
+  <script>
+    // Define the mapping of search terms to inner page IDs
+    const pageMappings = {
+      'device': 'innerPage1',
+      'search': 'innerPage2',
+      // Add more mappings as needed
+    };
+    
+    document.getElementById('searchIcon').addEventListener('click', function() {
+      var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+      
+      // Hide all inner pages by default
+      const innerPages = document.querySelectorAll('#innerPages > div');
+      innerPages.forEach(page => {
+        page.style.display = 'none';
+      });
+      
+      // Check if the search term matches any inner page mapping
+      if (searchTerm in pageMappings) {
+        // If it matches, display the corresponding inner page
+        document.getElementById(pageMappings[searchTerm]).style.display = 'block';
+      }
+    });
+   
+
+    </script>
+</body>
+</html>

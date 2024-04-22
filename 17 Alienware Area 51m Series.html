@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .body
+{
+    padding: 10px;
+    background-color:white;
+    /* margin:10px 100px 100px 100px ; */
+    height:100%;
+    margin:0 5% 0% 5%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    margin-top: 5%;
+}
+.h2
+{
+    text-align:  center;
+}
+.box
+{
+    padding: 10px;
+    margin-left:  5px ;
+
+
+
+}
+.body1 img:hover{
+    transform: scale(1.05);
+
+}
+a {
+    color: #000000; /* Change the color to your preference */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  /* Styles for link hover effect */
+  a:hover {
+    color: #12b14a; /* Change the hover color to your preference */
+  }
+  
+  /* Styles for visited links */
+  a:visited {
+    color: #0e0d0b; /* Change the color for visited links to your preference */
+  }
+  .box1
+{
+    padding: 10px;
+    margin-left:  5px ;
+
+
+
+}
+  
+
+
+
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 15%;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    height: 20%;
+    
+}
+
+.card:hover {
+    transform: scale(0.95);
+    border: 2px solid rgb(59, 220, 67);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    margin: 10px;
+    text-align: center;
+}
+.body1
+{
+    
+    background-color:white;
+    margin:0 5% 0% 5%;
+    height:100%;
+    margin-top: 3%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+    height: 20%;            display: flex;
+
+
+}
+.photobanner {
+	position: relative;
+	height: 100px;
+	margin-bottom: 30px;
+	display: flex;
+	width: 70px;
+}
+
+.photobanner img {
+  margin: 0px 25px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+  width:500px;
+  margin-right: 20px; /* Adjust the gap between cards */
+
+}
+
+.photobanner {
+  animation: bannermove 50s linear infinite alternate-reverse;
+}
+
+@keyframes bannermove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -2700px;
+  }
+}
+.body2
+{
+    background-color:white;
+    margin:0 5% 0% 5%;
+    height:100%;
+    margin-top: 2%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80
+
+}
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.img-slider__container-1 {
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+    overflow: auto;
+    justify-content: start;
+    align-items: center;
+    height: 200px;
+    .img-items {
+        width: 100%;
+        img {
+            width: var(--img-width);
+            &.img-active {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}
+img{
+    width:70%
+}
+.body3
+{
+      
+    background-color:white;
+    margin:0 5% 0% 5%;
+    height:100%;
+    margin-top: 2%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+
+}
+
+footer {
+  background-color: #00BF62
+  ;
+    color: #0f0e0e;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #141212;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    list-style: none;
+  
+  }
+  
+  .follow-us-section {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    /* margin-bottom: 20px; */
+    /* margin-top:30%; */
+    display: flex;
+    align-items: center;
+    margin-left:100%;
+    
+  }
+  
+  .follow-us-section h3 {
+    margin-right: 10px;
+  }
+  .follow-us-section img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  .company-details {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /* Basic styles for all links */
+  a {
+    color: #000000; /* Change the color to your preference */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  /* Styles for link hover effect */
+  a:hover {
+    color: #15982d; /* Change the hover color to your preference */
+  }
+  
+  /* Styles for visited links */
+  a:visited {
+    color: #0e0d0b; /* Change the color for visited links to your preference */
+  }
+  .follow{
+    margin-left:80%;
+  }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  color: #120101;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  font-size: 10px;
+  cursor: pointer;
+background-color: #00BF62;
+height: 80px;
+box-shadow: #000000;
+}
+
+.left-option {
+  margin-left: 10px;
+}
+
+.right-option {
+  margin-right: 100px;
+}   
+.card {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* margin-left: 5%; */
+      /* margin-top: 2%; */
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .specifications {
+      flex: 1;
+      padding: 16px;
+      box-sizing: border-box;
+      margin-left: 40%;
+      margin-top: -20%;
+      font-size: large;
+    }
+
+    @media (max-width: 600px) {
+      /* Adjust styling for smaller screens */
+      .card img {
+        width: 100%;
+      }
+    }
+
+/* CSS */
+button {
+    background-image: radial-gradient( circle farthest-corner at -0.6% 44.4%,  rgba(142,252,152,1) 0%, rgba(107,214,250,1) 90% );  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  border: none;
+}
+
+button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #00BF62, .125rem .125rem 1rem #00BF62;
+}
+
+button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #00BF62, .125rem .125rem 1rem #00BF62;
+}@media (max-width: 767px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .specifications {
+        margin-left: 0;
+        margin-top: 10px; /* Adjusted margin */
+    }
+}
+
+
+    
+    </style>
+    
+</head>
+
+<body>
+  <header>
+    <div class="left-option" style="margin-left: 10px;">
+      <a href="index.html">
+          <img src="https://i.ibb.co/qNkqJs7/siva-visting-card-front-side-copy-1-1.jpg" alt="" class="logo-icon" style="width: 350px; height: 50px; border-radius: 50%; object-fit: cover;">
+      </a>
+  </div>
+  <div class="right-option" style="margin-right: 100px;">
+      <h1 style="color: white;">B2B MARKETPLACE</h1>
+  </div>
+</header>
+    <div class="body">
+        <div class="box">
+        <h2 class="h2">Sell Old Alienware Area 51m  Series</h2>
+        <p><a href="index.html">Home ></a>
+            <a href="Sell Old Laptops.html" style="color:#080909;">Sell Old Laptops</a>>
+            <a href="Sell Old Alinware Laptop.html" style="color:#090a0a;">Sell Old Alienware Laptop>
+            <a href="17 Alienware Area 51m Series.html"  style="color:#00BF62;">Sell Old Alienware Area 51m Series</a></p>    
+         <hr>
+        </div>
+        
+        <div class="card">
+            <img src="data:image/jpeg;base64,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" alt="Card Image" >
+           
+          </div>
+          <div class="specifications">
+            <h3 style="color: #00BF62;">SPECIFICATIONS</h3>
+            <p>
+              <strong style="color: #00BF62;">
+                             <img src="https://i.ibb.co/CQnTL9M/Processor.png" alt="Processor Icon" style="vertical-align: middle; height: 28px; width: 28px;"> Processor: </strong> Upto Intel Core i7</p>
+            <p><strong style="color: #00BF62;">
+              <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/memory-ram-3724136-3111107.png" alt="RAM Icon" style="vertical-align: middle; height: 30px; width: 30px;"> RAM: </strong> Upto 8GB</p>
+            <p><strong style="color: #00BF62;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqSzQhCmGcD6R0ex_jCLaGRkMZWxhUzZeC8A&s" alt="Storage Icon" style="vertical-align: middle; height: 28px; width: 28px;">&nbsp Storage:</strong>  
+              Upto 256GB </p>
+            <p><strong style="color: #00BF62;">Choose Variant:</strong> AREA 51M SERIES / WINDOWS / LINUX / DOS</p>
+            <button>Buy Now</button>
+          </div>
+        
+      <hr>  
+
+    </div>
+    <div class="body1">
+    <div class="box1">
+        <h2 style="color:#00BF62;"> TOP BRANDS:</h2>
+    <div class="wrapper" style="height: 20%;">
+        <div class="photobanner">
+      <img class="first" src="https://cdn.recycledevice.com/brands/apple.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+      <img src="https://cdn.recycledevice.com/brands/google.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/hp.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/motorola.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/microsoft.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/acer.png" alt="" />
+      <img src="https://drop.ndtv.com/TECH/product_database/images/417201762742PM_tecno_mobile.jpg?downsize=170:*" alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/realme.png" alt="" />
+            <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/vivo.png" alt="" />
+      <img src="https://cdn.gadgets360.com/content/assets/brands/hisense.jpg?downsize=170:*" alt="" />
+
+      <img class="first" src="https://cdn.recycledevice.com/brands/apple.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+      <img src="https://cdn.recycledevice.com/brands/google.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/hp.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/motorola.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/microsoft.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/acer.png" alt="" />
+      <img src="https://drop.ndtv.com/TECH/product_database/images/417201762742PM_tecno_mobile.jpg?downsize=170:*" alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/realme.png" alt="" />
+            <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/vivo.png" alt="" />
+      <img src="https://cdn.gadgets360.com/content/assets/brands/hisense.jpg?downsize=170:*" alt="" />
+
+    </div>
+    </div>
+    </div>
+
+    </div>
+    <div class="body2">
+        <div class="box2">
+            <h2 style="color:#00BF62;"> TOP MODELS:</h2>
+            <div class="img-slider__container-1">
+                <div class="img-items">
+                    
+                    <img src="https://cdn.recycledevice.com/device/5144.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5149.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5145.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5005.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5015.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5005.jpeg" alt="" style="--img-width: 300px">
+                </div><div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5012.jpeg" alt="" style="--img-width: 300px">
+                </div><div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5015.jpeg" alt="" style="--img-width: 300px">
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>SELL DEVICES</h3>
+                <ul>
+                    <li><a href="#" >Sell Old LAPTOP</a></li>
+                    <li><a href="sellphones.html">Sell Old Phones</a></li>
+
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="#">B2B Marketplace</a></li>
+                    <li><a href="#">Become a Partner</a></li>
+                    <li><a href="#">Become a Rider</a></li>
+                    <li><a href="#">Our Warehouses</a></li>
+                    <li><a href="#">Partner Brands</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>MORE INFO</h3>
+                <ul>
+                    <li><a href="TermsConditions.html">Terms & Conditions</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cancellation & Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">E - Waste Policy</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>NEED HELP?</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Why-recycle</a></li>
+                    <li><a href="#">Laptop QC</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+         
+        
+      </footer>
+
+    </div>
+</body>
+</html>

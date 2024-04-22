@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .body
+{
+    padding: 10px;
+    background-color:white;
+    /* margin:10px 100px 100px 100px ; */
+    height:100%;
+    margin:0 5% 0% 5%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    margin-top: 5%;
+}
+.h2
+{
+    text-align:  center;
+}
+.box
+{
+    padding: 10px;
+    margin-left:  5px ;
+
+
+
+}
+.body1 img:hover{
+    transform: scale(1.05);
+
+}
+a {
+    color: #000000; /* Change the color to your preference */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  /* Styles for link hover effect */
+  a:hover {
+    color: #12b14a; /* Change the hover color to your preference */
+  }
+  
+  /* Styles for visited links */
+  a:visited {
+    color: #0e0d0b; /* Change the color for visited links to your preference */
+  }
+  .box1
+{
+    padding: 10px;
+    margin-left:  5px ;
+
+
+
+}
+  
+
+
+
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 15%;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    height: 20%;
+    
+}
+
+.card:hover {
+    transform: scale(0.95);
+    border: 2px solid rgb(59, 220, 67);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    margin: 10px;
+    text-align: center;
+}
+.body1
+{
+    
+    background-color:white;
+    margin:0 5% 0% 5%;
+    height:100%;
+    margin-top: 3%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+    height: 20%;            display: flex;
+
+
+}
+.photobanner {
+	position: relative;
+	height: 100px;
+	margin-bottom: 30px;
+	display: flex;
+	width: 70px;
+}
+
+.photobanner img {
+  margin: 0px 25px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+  width:500px;
+  margin-right: 20px; /* Adjust the gap between cards */
+
+}
+
+.photobanner {
+  animation: bannermove 50s linear infinite alternate-reverse;
+}
+
+@keyframes bannermove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -2700px;
+  }
+}
+.body2
+{
+    background-color:white;
+    margin:0 5% 0% 5%;
+    height:100%;
+    margin-top: 2%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80
+
+}
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.img-slider__container-1 {
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+    overflow: auto;
+    justify-content: start;
+    align-items: center;
+    height: 200px;
+    .img-items {
+        width: 100%;
+        img {
+            width: var(--img-width);
+            &.img-active {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}
+img{
+    width:70%
+}
+.body3
+{
+      
+    background-color:white;
+    margin:0 5% 0% 5%;
+    height:100%;
+    margin-top: 2%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+
+}
+
+footer {
+  background-color: #00BF62
+  ;
+    color: #0f0e0e;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #141212;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    list-style: none;
+  
+  }
+  
+  .follow-us-section {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    /* margin-bottom: 20px; */
+    /* margin-top:30%; */
+    display: flex;
+    align-items: center;
+    margin-left:100%;
+    
+  }
+  
+  .follow-us-section h3 {
+    margin-right: 10px;
+  }
+  .follow-us-section img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  .company-details {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /* Basic styles for all links */
+  a {
+    color: #000000; /* Change the color to your preference */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  /* Styles for link hover effect */
+  a:hover {
+    color: #15982d; /* Change the hover color to your preference */
+  }
+  
+  /* Styles for visited links */
+  a:visited {
+    color: #0e0d0b; /* Change the color for visited links to your preference */
+  }
+  .follow{
+    margin-left:80%;
+  }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  color: #120101;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  font-size: 10px;
+  cursor: pointer;
+background-color: #00BF62;
+height: 80px;
+box-shadow: #000000;
+}
+
+.left-option {
+  margin-left: 10px;
+}
+
+.right-option {
+  margin-right: 100px;
+}   
+.card {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* margin-left: 5%; */
+      /* margin-top: 2%; */
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .specifications {
+      flex: 1;
+      padding: 16px;
+      box-sizing: border-box;
+      margin-left: 40%;
+      margin-top: -20%;
+      font-size: large;
+    }
+
+    @media (max-width: 600px) {
+      /* Adjust styling for smaller screens */
+      .card img {
+        width: 100%;
+      }
+    }
+
+/* CSS */
+button {
+    background-image: radial-gradient( circle farthest-corner at -0.6% 44.4%,  rgba(142,252,152,1) 0%, rgba(107,214,250,1) 90% );  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  border: none;
+}
+
+button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #00BF62, .125rem .125rem 1rem #00BF62;
+}
+
+button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #00BF62, .125rem .125rem 1rem #00BF62;
+}@media (max-width: 767px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .specifications {
+        margin-left: 0;
+        margin-top: 10px; /* Adjusted margin */
+    }
+}
+
+
+    
+    </style>
+    
+</head>
+
+<body>
+  <header>
+    <div class="left-option" style="margin-left: 10px;">
+      <a href="index.html">
+          <img src="https://i.ibb.co/qNkqJs7/siva-visting-card-front-side-copy-1-1.jpg" alt="" class="logo-icon" style="width: 350px; height: 50px; border-radius: 50%; object-fit: cover;">
+      </a>
+  </div>
+  <div class="right-option" style="margin-right: 100px;">
+      <h1 style="color: white;">B2B MARKETPLACE</h1>
+  </div>
+</header>
+    <div class="body">
+        <div class="box">
+        <h2 class="h2">Sell Old Lenovo ThinkPad P  Series</h2>
+        <p><a href="index.html">Home ></a>
+            <a href="Sell Old Laptops.html" style="color:#080909;">Sell Old Laptops</a>>
+            <a href="Sell Old Lenovo Laptop.html" style="color:#090a0a;">Sell Old Lenovo Laptop>
+            <a href="17 Lenovo ThinkPad P Series.html"  style="color:#00BF62;">Sell Old Lenovo ThinkPad P  Series</a></p>    
+         <hr>
+        </div>
+        
+        <div class="card">
+            <img src="https://cdn.recycledevice.com/device/5072.jpeg" alt="Card Image" >
+           
+          </div>
+          <div class="specifications">
+            <h3 style="color: #00BF62;">SPECIFICATIONS</h3>
+            <p>
+              <strong style="color: #00BF62;">
+                             <img src="https://i.ibb.co/CQnTL9M/Processor.png" alt="Processor Icon" style="vertical-align: middle; height: 28px; width: 28px;"> Processor: </strong> Upto Intel Xeon E</p>
+            <p><strong style="color: #00BF62;">
+              <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/memory-ram-3724136-3111107.png" alt="RAM Icon" style="vertical-align: middle; height: 30px; width: 30px;"> RAM: </strong> Upto 32GB</p>
+            <p><strong style="color: #00BF62;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqSzQhCmGcD6R0ex_jCLaGRkMZWxhUzZeC8A&s" alt="Storage Icon" style="vertical-align: middle; height: 28px; width: 28px;">&nbsp Storage:</strong>  
+              Upto 1TB + 512GB SSD</p>
+            <p><strong style="color: #00BF62;">Choose Variant:</strong> THINKPAD P SERIES / WINDOWS / LINUX / DOS</p>
+            <button>Buy Now</button>
+          </div>
+        
+      <hr>  
+
+    </div>
+    <div class="body1">
+    <div class="box1">
+        <h2 style="color:#00BF62;"> TOP BRANDS:</h2>
+    <div class="wrapper" style="height: 20%;">
+        <div class="photobanner">
+      <img class="first" src="https://cdn.recycledevice.com/brands/apple.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+      <img src="https://cdn.recycledevice.com/brands/google.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/hp.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/motorola.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/microsoft.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/acer.png" alt="" />
+      <img src="https://drop.ndtv.com/TECH/product_database/images/417201762742PM_tecno_mobile.jpg?downsize=170:*" alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/realme.png" alt="" />
+            <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/vivo.png" alt="" />
+      <img src="https://cdn.gadgets360.com/content/assets/brands/hisense.jpg?downsize=170:*" alt="" />
+
+      <img class="first" src="https://cdn.recycledevice.com/brands/apple.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+      <img src="https://cdn.recycledevice.com/brands/google.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/hp.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/motorola.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/microsoft.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/acer.png" alt="" />
+      <img src="https://drop.ndtv.com/TECH/product_database/images/417201762742PM_tecno_mobile.jpg?downsize=170:*" alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/realme.png" alt="" />
+            <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/vivo.png" alt="" />
+      <img src="https://cdn.gadgets360.com/content/assets/brands/hisense.jpg?downsize=170:*" alt="" />
+
+    </div>
+    </div>
+    </div>
+
+    </div>
+    <div class="body2">
+        <div class="box2">
+            <h2 style="color:#00BF62;"> TOP MODELS:</h2>
+            <div class="img-slider__container-1">
+                <div class="img-items">
+                    
+                    <img src="https://cdn.recycledevice.com/device/5144.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5149.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5145.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5005.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5015.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5005.jpeg" alt="" style="--img-width: 300px">
+                </div><div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5012.jpeg" alt="" style="--img-width: 300px">
+                </div><div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5015.jpeg" alt="" style="--img-width: 300px">
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>SELL DEVICES</h3>
+                <ul>
+                    <li><a href="#" >Sell Old LAPTOP</a></li>
+                    <li><a href="sellphones.html">Sell Old Phones</a></li>
+
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="#">B2B Marketplace</a></li>
+                    <li><a href="#">Become a Partner</a></li>
+                    <li><a href="#">Become a Rider</a></li>
+                    <li><a href="#">Our Warehouses</a></li>
+                    <li><a href="#">Partner Brands</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>MORE INFO</h3>
+                <ul>
+                    <li><a href="TermsConditions.html">Terms & Conditions</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cancellation & Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">E - Waste Policy</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>NEED HELP?</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Why-recycle</a></li>
+                    <li><a href="#">Laptop QC</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+         
+        
+      </footer>
+
+    </div>
+</body>
+</html>

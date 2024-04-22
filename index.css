@@ -1,0 +1,426 @@
+/* Reset some default styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Optional background color */
+}
+
+/* Styling for the header section */
+header {
+  color: #120101;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  font-size: 10px;
+  cursor: pointer;
+background-color: #00BF62;
+height: 80px;
+box-shadow: #000000;
+}
+.logo-icon {
+  width: 450px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+
+/* Flex container for the header content */
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for left and right sections of the header */
+#left,
+#right {
+  padding: 20px;
+}
+
+/* Styles for the right section of the header */
+#right {
+  text-align: center;
+}
+
+/* Styles for hiding specific elements */
+#sellMobiles,
+#sellTablet,
+#sellLaptop {
+  display: none;
+}
+
+/* Styling for the main heading */
+h1 {
+  display: flex;
+  align-items: center;
+}
+
+h1 span.recycle {
+  color: red;
+}
+
+h1 span.device {
+  color: black;
+}
+
+h1 span.B2B {
+  font-size: 25px; /* Adjust the font size as needed */
+  color: red;
+}
+
+h1 span.MARKETPLACE {
+  font-size: 25px; /* Adjust the font size as needed */
+  color: black;
+}
+
+/* Additional styles for a specific heading */
+#b2bHeading {
+  font-size: 14px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #333; /* Adjust color as needed */
+}
+
+/* Styling for the slider section */
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 33.33%; /* Adjust the width of each slide as needed */
+  transition: transform 0.5s ease;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide:hover .slide-content {
+  opacity: 1;
+}
+
+/* Additional styles for the slider section */
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.content {
+  flex: 1;
+  text-align: center;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Center-align text */
+.center-text {
+  text-align: center;
+}
+
+/* Additional styles for equal spacing */
+.equal-spacing {
+  text-align: center;
+  text-indent: 50px; /* Adjust the indentation as needed */
+}
+
+/* Styling for the search bar section */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Adjust the height as needed */
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container input {
+  padding: 10px;
+  font-size: 16px;
+  width: 600px; /* Adjust the width as needed */
+  box-sizing: border-box;
+}
+
+.search-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  cursor: pointer;
+}
+
+/* Add the following styles for the upper card section */
+/* Style for the back side of upper cards */
+
+
+.upper-card-section {
+  background-color: #f0f0f0; /* Adjust the background color as needed */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center; /* Center align content */
+}
+
+/* Add the following styles for the upper card container */
+.upper-card-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure cards wrap to the next line if there are more */
+  justify-content: center; /* Center cards horizontally */
+  align-items: center; /* Center cards vertically */
+}
+
+/* Add the following styles for each upper mobile card */
+.upper-mobile-card {
+  flex: 0 0 calc(45% - 20px); /* Set width for each card */
+  max-width: calc(15% - 15px); /* Set maximum width to prevent overflow */
+  margin: 10px; /* Adjust margin between cards */
+  background-color: white;
+  padding: 10px;
+  /* Remove border-radius to make edges sharp */
+  border-radius: 0; /* Optional: you can remove this line if it's already set to 0 elsewhere */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align content */
+}
+
+.upper-laptop-card {
+  flex: 0 0 calc(45% - 20px); /* Set width for each card */
+  max-width: calc(15% - 15px); /* Set maximum width to prevent overflow */
+  margin: 10px; /* Adjust margin between cards */
+  background-color: white;
+  padding: 10px;
+  /* Remove border-radius to make edges sharp */
+  border-radius: 0; /* Optional: you can remove this line if it's already set to 0 elsewhere */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align content */
+}
+
+
+.upper-card img {
+  max-width: 50%; /* Adjust image size */
+  max-height: 50px; /* Adjust image size */
+  border-radius: 50%; /* Optional: Round the corners of the image */
+  margin-bottom: 5px; /* Adjust margin as needed */
+}
+
+.upper-card h3 {
+  font-size: 12px; /* Adjust font size */
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.upper-card p {
+  font-size: 10px; /* Adjust font size */
+  color: #555;
+}
+
+/* Style for the back side of upper cards */
+.upper-card .back-side {
+  background-color: white; /* Set background color for the back side of upper cards */
+}
+
+/* Add the following styles for the lower card section */
+.lower-card-section {
+  background-color: #fff; /* Adjust the background color as needed */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+/* Add the following styles for the lower card container */
+.lower-card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure cards wrap to the next line if there are more */
+}
+
+/* Add the following styles for each lower card */
+.lower-card {
+  width: calc(30% - 20px); /* Adjust the width as needed, considering margin */
+  height: 300px; /* Adjust the height as needed */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Adjust margin as needed */
+  text-align: center; /* Center align content */
+}
+
+.lower-card img {
+  max-width: 100%; /* Make sure the image doesn't exceed the container width */
+  max-height: 150px; /* Adjust the max-height as needed */
+  border-radius: 50%; /* Optional: Round the corners of the image */
+  margin-bottom: 5px; /* Adjust margin as needed */
+}
+
+.lower-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.lower-card h2 {
+  color: #eb5b13;
+}
+
+/* Additional style to remove margin between lower cards */
+.lower-card:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Additional styles for the long card section */
+.long-card-section {
+  background-color: transparent; /* Adjust the background color as needed */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: left; /* Align text to the left */
+}
+
+.long-card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure cards wrap to the next line if there are more */
+  margin-bottom: 20px; /* Add margin-bottom to create space between cards */
+}
+
+.long-card {
+  width: calc(28% - 20px); /* Adjust the width as needed, considering margin */
+  margin-bottom: 20px; /* Adjust margin as needed */
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: none; /* Remove box shadow */
+  border: none; /* Remove border */
+  text-align: center; /* Center align content */
+  display: flex;
+  align-items: center; /* Center content vertically */
+}
+
+.long-card img {
+  max-width: 100px; /* Make sure the image doesn't exceed the container width */
+  max-height: 100px; /* Adjust the max-height as needed */
+  border-radius: 8px; /* Optional: Round the corners of the image */
+  margin-right: 20px; /* Adjust margin-right as needed */
+}
+
+.long-card-content {
+  text-align: left;
+  flex: 1; /* Use remaining space for content */
+}
+
+.long-card-content h2 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.long-card-content p {
+  color: #555;
+}
+
+/* Additional styles for the footer section */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color:#00BF62; /* Set the background color to green */
+  color: white;
+  padding: 20px;
+  transition: margin 0.3s ease; /* Add a transition for smooth movement */
+}
+
+.footer-section {
+  width: 18%; /* Adjust the width of each section as needed */
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+
+/* Sell section */
+.sell-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
+.sell-section h1 {
+  font-size: 24px;
+  color: #333; /* Adjust text color as needed */
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sheet {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* Adjust the background color as needed */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+}
+
+.sheet.active {
+  display: block;
+}
+
+.column {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.dropdown.active .sheet {
+  display: block;
+}

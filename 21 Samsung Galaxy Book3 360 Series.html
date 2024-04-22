@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .body
+{
+    padding: 10px;
+    background-color:white;
+    /* margin:10px 100px 100px 100px ; */
+    height:100%;
+    margin:0 5% 0% 5%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    margin-top: 5%;
+}
+.h2
+{
+    text-align:  center;
+}
+.box
+{
+    padding: 10px;
+    margin-left:  5px ;
+
+
+
+}
+.body1 img:hover{
+    transform: scale(1.05);
+
+}
+a {
+    color: #000000; /* Change the color to your preference */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  /* Styles for link hover effect */
+  a:hover {
+    color: #12b14a; /* Change the hover color to your preference */
+  }
+  
+  /* Styles for visited links */
+  a:visited {
+    color: #0e0d0b; /* Change the color for visited links to your preference */
+  }
+  .box1
+{
+    padding: 10px;
+    margin-left:  5px ;
+
+
+
+}
+  
+
+
+
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 15%;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    height: 20%;
+    
+}
+
+.card:hover {
+    transform: scale(0.95);
+    border: 2px solid rgb(59, 220, 67);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    margin: 10px;
+    text-align: center;
+}
+.body1
+{
+    
+    background-color:white;
+    margin:0 5% 0% 5%;
+    height:100%;
+    margin-top: 3%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+    height: 20%;            display: flex;
+
+
+}
+.photobanner {
+	position: relative;
+	height: 100px;
+	margin-bottom: 30px;
+	display: flex;
+	width: 70px;
+}
+
+.photobanner img {
+  margin: 0px 25px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+  width:500px;
+  margin-right: 20px; /* Adjust the gap between cards */
+
+}
+
+.photobanner {
+  animation: bannermove 50s linear infinite alternate-reverse;
+}
+
+@keyframes bannermove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -2700px;
+  }
+}
+.body2
+{
+    background-color:white;
+    margin:0 5% 0% 5%;
+    height:100%;
+    margin-top: 2%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80
+
+}
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.img-slider__container-1 {
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+    overflow: auto;
+    justify-content: start;
+    align-items: center;
+    height: 200px;
+    .img-items {
+        width: 100%;
+        img {
+            width: var(--img-width);
+            &.img-active {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}
+img{
+    width:70%
+}
+.body3
+{
+      
+    background-color:white;
+    margin:0 5% 0% 5%;
+    height:100%;
+    margin-top: 2%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+
+}
+
+footer {
+  background-color: #00BF62
+  ;
+    color: #0f0e0e;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #141212;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    list-style: none;
+  
+  }
+  
+  .follow-us-section {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    /* margin-bottom: 20px; */
+    /* margin-top:30%; */
+    display: flex;
+    align-items: center;
+    margin-left:100%;
+    
+  }
+  
+  .follow-us-section h3 {
+    margin-right: 10px;
+  }
+  .follow-us-section img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  .company-details {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /* Basic styles for all links */
+  a {
+    color: #000000; /* Change the color to your preference */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  /* Styles for link hover effect */
+  a:hover {
+    color: #15982d; /* Change the hover color to your preference */
+  }
+  
+  /* Styles for visited links */
+  a:visited {
+    color: #0e0d0b; /* Change the color for visited links to your preference */
+  }
+  .follow{
+    margin-left:80%;
+  }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: #120101;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  font-size: 10px;
+  cursor: pointer;
+background-color: #00BF62;
+height: 80px;
+box-shadow: #000000;
+}
+
+.left-option {
+  margin-left: 10px;
+}
+
+.right-option {
+  margin-right: 100px;
+}   
+.card {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* margin-left: 5%; */
+      /* margin-top: 2%; */
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .specifications {
+      flex: 1;
+      padding: 16px;
+      box-sizing: border-box;
+      margin-left: 40%;
+      margin-top: -20%;
+      font-size: large;
+    }
+
+    @media (max-width: 600px) {
+      /* Adjust styling for smaller screens */
+      .card img {
+        width: 100%;
+      }
+    }
+
+/* CSS */
+button {
+    background-image: radial-gradient( circle farthest-corner at -0.6% 44.4%,  rgba(142,252,152,1) 0%, rgba(107,214,250,1) 90% );  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  border: none;
+}
+
+button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #00BF62, .125rem .125rem 1rem #00BF62;
+}
+
+button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #00BF62, .125rem .125rem 1rem #00BF62;
+}
+
+    /* Mobile Responsive Styles */
+@media (max-width: 767px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .specifications {
+        margin-left: 0;
+        margin-top: 10px; /* Adjusted margin */
+    }
+}
+
+    </style>
+    
+</head>
+
+<body>
+  <header>
+    <div class="left-option" style="margin-left: 10px;">
+      <a href="index.html">
+          <img src="https://i.ibb.co/qNkqJs7/siva-visting-card-front-side-copy-1-1.jpg" alt="" class="logo-icon" style="width: 350px; height: 50px; border-radius: 50%; object-fit: cover;">
+      </a>
+  </div>
+  <div class="right-option" style="margin-right: 100px;">
+      <h1 style="color: white;">B2B MARKETPLACE</h1>
+  </div>
+</header>
+    <div class="body">
+
+        <div class="box">
+        <h2 class="h2">
+            
+            Sell Old Samsung Galaxy Book3 360  Series
+                </h2>
+        <p><a href="index.html">Home ></a>
+            <a href="Sell Old Laptops.html" style="color:#080909;">Sell Old Laptops</a>>
+            <a href="Sell Old Samsung Laptop.html" style="color:#090a0a;">Sell Old Samsung Laptop >
+            <a href="21 Samsung Galaxy Book3 360 Series.html"  style="color:#00BF62;">Sell Old Samsung Galaxy Book3 360Series 
+            </p> </a>   
+         <hr>
+        </div>
+        
+        <div class="card">
+            <img src="data:image/jpeg;base64,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"><p></p>
+   </a> 
+           
+          </div>
+          <div class="specifications">
+            <h3 style="color: #00BF62;">SPECIFICATIONS</h3>
+            <p> <strong style="color: #00BF62;">
+              <img src="https://i.ibb.co/CQnTL9M/Processor.png" alt="Processor Icon" style="vertical-align: middle; height: 28px; width: 28px;"> Processor: </strong>Upto Intel Core i7
+
+            </p>
+            <p><strong style="color: #00BF62;">
+              <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/memory-ram-3724136-3111107.png" alt="RAM Icon" style="vertical-align: middle; height: 30px; width: 30px;"> RAM: </strong>
+                Upto 16GB
+
+            </p>
+            <p><strong style="color: #00BF62;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqSzQhCmGcD6R0ex_jCLaGRkMZWxhUzZeC8A&s" alt="Storage Icon" style="vertical-align: middle; height: 28px; width: 28px;">&nbsp Storage:</strong> 
+                Upto 256GB
+
+            </p>
+            <p><strong style="color: #00BF62;">Choose Variant:</strong> GALAXY BOOK3  360 SERIES /  WINDOWS / LINUX / DOS</p>
+            <button>Buy Now</button>
+          </div>
+          
+ 
+ 
+<hr>
+    </div>
+    <div class="body1">
+    <div class="box1">
+        <h2 style="color:#00BF62;"> TOP BRANDS:</h2>
+    <div class="wrapper" style="height: 20%;">
+        <div class="photobanner">
+      <img class="first" src="https://cdn.recycledevice.com/brands/apple.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+      <img src="https://cdn.recycledevice.com/brands/google.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/hp.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/motorola.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/microsoft.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/acer.png" alt="" />
+      <img src="https://drop.ndtv.com/TECH/product_database/images/417201762742PM_tecno_mobile.jpg?downsize=170:*" alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/realme.png" alt="" />
+            <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/vivo.png" alt="" />
+      <img src="https://cdn.gadgets360.com/content/assets/brands/hisense.jpg?downsize=170:*" alt="" />
+
+      <img class="first" src="https://cdn.recycledevice.com/brands/apple.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+      <img src="https://cdn.recycledevice.com/brands/google.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/hp.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/motorola.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/microsoft.png" alt="" />
+      <img src="https://cdn.recycledevice.com/brands/acer.png" alt="" />
+      <img src="https://drop.ndtv.com/TECH/product_database/images/417201762742PM_tecno_mobile.jpg?downsize=170:*" alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/realme.png" alt="" />
+            <img src="https://cdn.recycledevice.com/brands/dell.png " alt="" />
+
+      <img src="https://cdn.recycledevice.com/brands/vivo.png" alt="" />
+      <img src="https://cdn.gadgets360.com/content/assets/brands/hisense.jpg?downsize=170:*" alt="" />
+
+    </div>
+    </div>
+    </div>
+
+    </div>
+    <div class="body2">
+        <div class="box2">
+            <h2 style="color:#00BF62;"> TOP MODELS:</h2>
+            <div class="img-slider__container-1">
+                <div class="img-items">
+                    
+                    <img src="https://cdn.recycledevice.com/device/5144.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5149.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5145.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5005.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5015.jpeg" alt="" style="--img-width: 300px">
+                </div>
+                <div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5005.jpeg" alt="" style="--img-width: 300px">
+                </div><div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5012.jpeg" alt="" style="--img-width: 300px">
+                </div><div class="img-items">
+                    <img src="https://cdn.recycledevice.com/device/5015.jpeg" alt="" style="--img-width: 300px">
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>SELL DEVICES</h3>
+                <ul>
+                    <li><a href="#" >Sell Old LAPTOP</a></li>
+                    <li><a href="sellphones.html">Sell Old Phones</a></li>
+
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="#">B2B Marketplace</a></li>
+                    <li><a href="#">Become a Partner</a></li>
+                    <li><a href="#">Become a Rider</a></li>
+                    <li><a href="#">Our Warehouses</a></li>
+                    <li><a href="#">Partner Brands</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>MORE INFO</h3>
+                <ul>
+                    <li><a href="TermsConditions.html">Terms & Conditions</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cancellation & Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">E - Waste Policy</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>NEED HELP?</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Why-recycle</a></li>
+                    <li><a href="#">Laptop QC</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+         
+        
+      </footer>
+
+    </div>
+</body>
+</html>
